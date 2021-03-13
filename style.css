@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global settings start */
+* {
+    box-sizing: border-box;
+    color: grey;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+p {
+    font-size: 12px;
+}
+
+.header_of_blocks h2 {
+    color: rgb(87, 87, 87);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header_of_blocks hr {
+    height: 8px;
+    background-color: rgb(87, 87, 87);
+    border: 0px;
+    width: 50px;
+    margin-left: 0;
+}
+
+.header_of_blocks p {
+    color: grey;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 30px
+}
+
+ul li {
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 16px;
+}
+/* Global settings end */
+
+
+/* Header settings start */
+header {
+    height: 400px;
+    /*background-image: url('header-background.jpg');*/
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .container .image {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+header .main_header {
+    display: flex;
+}
+
+header .main_header h1, h2{
+    color: white;
+}
+
+header .main_header h1 {
+    font-size: 72px;
+}
+
+header .header_text {
+    margin-left: 40px;
+}
+
+/* Header settings end */
+
+
+/* Main settings start */
+main div {
+    margin-bottom: 40px;
+}
+
+main .container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+main .left_side {
+    background-color: white;
+    width: 25%;
+    padding-top: 50px;
+}
+
+main .right_side {
+    padding: 50px;
+    width: 63%;
+    background-color: rgb(255, 255, 255);
+}
+
+main .contacts li, main .skills li {
+    font-size: 16px;
+}
+/* Main settings end */
+
