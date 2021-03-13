@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    max-width: 850px;
+    max-width: 800px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ body {
 }
 
 p {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .header_of_blocks h2 {
@@ -60,6 +60,17 @@ ul li {
 
 h3 {
     font-size: 16px;
+    color: rgb(41, 41, 41) !important;
+
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: red;
 }
 /* Global settings end */
 
@@ -67,7 +78,6 @@ h3 {
 /* Header settings start */
 header {
     height: 400px;
-    /*background-image: url('header-background.jpg');*/
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
@@ -78,6 +88,7 @@ header {
 header .container {
     width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -132,6 +143,21 @@ main .right_side {
 
 main .contacts li, main .skills li {
     font-size: 16px;
+}
+
+main .project {
+    margin-left: 20px;
+}
+
+main .project h3 img{
+    margin-left: -10px;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.project h3:hover > img {
+    opacity: 1;
+    margin-left: 5px;
 }
 /* Main settings end */
 
